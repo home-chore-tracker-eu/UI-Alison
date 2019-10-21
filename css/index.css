@@ -138,6 +138,7 @@ html {
 }
 a {
   text-decoration: none;
+  columns: white;
 }
 h1,
 h2,
@@ -168,29 +169,22 @@ body {
 }
 .container header {
   position: fixed;
-  width: 89%;
+  width: 90%;
   background-image: url(main/resources/theme-assets/img/bg-wool-dark.png);
   background-color: grey;
   z-index: 999;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: no-wrap;
-  justify-content: space-between;
 }
 .container header .navBar {
   margin-top: 10px;
+  margin-left: 40%;
   width: 50%;
-  border: 2px solid red;
   text-align: right;
-  justify-content: flex-start;
+  justify-content: flex-end;
   color: white;
   display: flex;
   flex-direction: row;
   flex-wrap: no-wrap;
   justify-content: space-around;
-}
-.container header .navBar .nav {
-  border: 2px solid pink;
 }
 .container header .navBar .nav a {
   color: white;
