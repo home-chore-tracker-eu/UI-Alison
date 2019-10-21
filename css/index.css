@@ -172,7 +172,7 @@ body {
 }
 .container header {
   position: fixed;
-  width: 95%;
+  width: 90%;
   background-color: grey;
   z-index: 999;
   display: flex;
@@ -199,21 +199,15 @@ body {
 .container header .titleAndIcon h1 {
   text-align: center;
 }
-.container header .main-img {
+.container .middle {
+  padding-top: 250px;
+  width: 100%;
+}
+.container .middle .main-img {
   padding-top: 200;
   width: 100%;
 }
-@media (max-width: 500px) {
-  .container header {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: no-wrap;
-    justify-content: center;
-    align-items: center;
-  }
-}
-.container .middle {
-  padding-top: 900px;
+.container .middle .main-img img {
   width: 100%;
 }
 .container .middle .content-section {

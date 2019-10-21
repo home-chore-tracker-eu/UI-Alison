@@ -5,7 +5,7 @@ body {
 .container {
   header {
     position: fixed;
-    width: 95%;
+    width: 90%;
     background-color: grey;
     z-index: 999;
     .flexboxall(column, no-wrap, space-between);
@@ -35,26 +35,21 @@ body {
 
     }
 
-    .main-img {
-      padding-top: 200;
-      width: 100%;
-
-    }
-
-
-    @media @mobile {
-      .flexboxall(column, no-wrap, center);
-      align-items: center;
-    }
-
-
-
+    
 
   }
 
   .middle {
-    padding-top: 900px;
+    padding-top: 250px;
     width:100%;
+
+    .main-img {
+      padding-top: 200;
+      width: 100%;
+        img{
+          width:100%;
+        }
+    }
 
     .content-section {
       max-width: 100%;
