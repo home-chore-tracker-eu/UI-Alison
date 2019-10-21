@@ -1,0 +1,31 @@
+// Mixins in here
+.flexboxall(@fd: row,@fw: no-wrap,@jc: flex-start ){
+    display: flex;
+    flex-direction: @fd;
+    flex-wrap: @fw;
+    justify-content: @jc;
+    
+   }
+
+   .stylebutton(
+       @bc:darkslategrey, 
+       @tc:white,
+        @pd: 10px,
+        @t-a:center,
+        @br:10px,
+        @width:30%){
+        background-color: @bc;
+        color: @tc;
+        padding: @pd;
+        text-align: @t-a;
+        border-radius: @br;
+        width:@width;
+   }
+   .flexboxParaMixin(@fd: row,@fw: unset,@jc: unset){
+    display: flex;
+    flex-direction: @fd;
+    flex-wrap: @fw;
+    justify-content: @jc;
+   }
+
+   
