@@ -5,31 +5,62 @@ body {
 .container {
   header {
     position: fixed;
-    width: 90%;
+    width: 89%;
+    background-image: url(main/resources/theme-assets/img/bg-wool-dark.png);
     background-color: grey;
     z-index: 999;
     .flexboxall(column, no-wrap, space-between);
     // padding-bottom: 20px;
-    background-image: url(main/resources/theme-assets/img/bg-wool-dark.png);
 
-    .nav {
-      width: 100%;
+    .navBar{
+     margin-top: 10px;
+     width: 50%;
+      border: 2px solid red;
+      text-align: right;
+      justify-content: flex-start;
       color: white;
-      // .flexboxall(row, flex-wrap, flex-end);
-      justify-content: start;
-      // align-items: center;
+      .flexboxall(row, no-wrap, space-around);
 
-
-      a {
-        color: white;
+      .nav {
+        // .flexboxall(row, no-wrap, left);
+        // justify-content: start;
+        border: 2px solid pink;
+        
+        // padding: 20px 5px;
+        // margin: 300px;
+        
+        // align-items: center;
+  
+  
+        a {
+          color: white;
+        }
       }
     }
+    
+
 
     .titleAndIcon {
+      
       .flexboxall(row-reverse, flex-wrap, space-around);
       align-items: center;
+      .cube-img{
+        border: none;
+        background-color: transparent;
+        width: 215px;
+        overflow: hidden;
+
+        img{
+          border:0;
+          width:212px;
+          height:221px;
+          float: left;
+          backface-visibility: ;
+        }
+      }
 
       h1 {
+        font-size: 10rem;
         text-align: center;
       }
 
@@ -103,7 +134,7 @@ body {
 
     .content-pick {
       padding-top: 30px;
-      border-top: 2px dashed @navigation-border;
+      // border-top: 2px dashed @navigation-border;
       display: flex;
       justify-content: space-between;
       text-align: center;
@@ -142,7 +173,7 @@ body {
       width: 80%;
       margin: 0 auto;
       padding: 20px 30px;
-      border-top: 2px dashed @navigation-border;
+      // border-top: 2px dashed @navigation-border;
 
 
       img {
@@ -150,10 +181,10 @@ body {
         border-radius: 10px;
       }
 
-      @media @mobile {
-        width: 100%;
-        padding: 20px 10px;
-      }
+      // @media @mobile {
+      //   width: 100%;
+      //   padding: 20px 10px;
+      // }
     }
   }
 

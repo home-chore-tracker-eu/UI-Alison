@@ -74,7 +74,6 @@ footer,
 header,
 hgroup,
 menu,
-nav,
 output,
 ruby,
 section,
@@ -135,13 +134,10 @@ html {
 .container {
   max-width: 90%;
   margin: 0 auto;
+  overflow: hidden;
 }
 a {
   text-decoration: none;
-}
-html,
-body {
-  font-family: 'Roboto', sans-serif;
 }
 h1,
 h2,
@@ -151,7 +147,7 @@ h5 {
   font-family: 'Minecraftia';
 }
 h1 {
-  font-size: 12rem;
+  font-size: 8rem;
   color: white;
 }
 h2 {
@@ -172,21 +168,31 @@ body {
 }
 .container header {
   position: fixed;
-  width: 90%;
+  width: 89%;
+  background-image: url(main/resources/theme-assets/img/bg-wool-dark.png);
   background-color: grey;
   z-index: 999;
   display: flex;
   flex-direction: column;
   flex-wrap: no-wrap;
   justify-content: space-between;
-  background-image: url(main/resources/theme-assets/img/bg-wool-dark.png);
 }
-.container header .nav {
-  width: 100%;
+.container header .navBar {
+  margin-top: 10px;
+  width: 50%;
+  border: 2px solid red;
+  text-align: right;
+  justify-content: flex-start;
   color: white;
-  justify-content: start;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+  justify-content: space-around;
 }
-.container header .nav a {
+.container header .navBar .nav {
+  border: 2px solid pink;
+}
+.container header .navBar .nav a {
   color: white;
 }
 .container header .titleAndIcon {
@@ -196,7 +202,21 @@ body {
   justify-content: space-around;
   align-items: center;
 }
+.container header .titleAndIcon .cube-img {
+  border: none;
+  background-color: transparent;
+  width: 215px;
+  overflow: hidden;
+}
+.container header .titleAndIcon .cube-img img {
+  border: 0;
+  width: 212px;
+  height: 221px;
+  float: left;
+  backface-visibility: ;
+}
 .container header .titleAndIcon h1 {
+  font-size: 10rem;
   text-align: center;
 }
 .container .middle {
@@ -250,7 +270,6 @@ body {
 }
 .container .middle .content-pick {
   padding-top: 30px;
-  border-top: 2px dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
   text-align: center;
@@ -281,17 +300,10 @@ body {
   width: 80%;
   margin: 0 auto;
   padding: 20px 30px;
-  border-top: 2px dashed #C0C0C0;
 }
 .container .middle .content-details img {
   width: 100%;
   border-radius: 10px;
-}
-@media (max-width: 500px) {
-  .container .middle .content-details {
-    width: 100%;
-    padding: 20px 10px;
-  }
 }
 .container .footer {
   width: 100%;
