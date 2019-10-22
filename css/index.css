@@ -96,9 +96,9 @@ figcaption,
 figure,
 footer,
 header,
+nav,
 hgroup,
 menu,
-nav,
 section {
   display: block;
 }
@@ -242,27 +242,32 @@ header .titleAndIcon .mineChore-img img {
   }
 }
 header .navBar {
-  border: purple 1px solid;
   margin-top: 10px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: flex-wrap;
-  justify-content: space-around;
+  padding: 20px;
   width: 100%;
   text-align: left;
   justify-content: flex-end;
 }
-header .navBar .nav {
+@media (max-width: 500px) {
+  header .navBar {
+    align-content: center;
+  }
+}
+header .navBar nav {
+  color: white;
   width: 100%;
   display: flex;
-  border: blue 1px solid;
+  flex-direction: row;
+  flex-wrap: flex-wrap;
+  justify-content: right;
 }
 @media (max-width: 500px) {
-  header .navBar .nav {
+  header .navBar nav {
     display: flex;
     flex-direction: column;
     flex-wrap: flex-wrap;
-    justify-content: center;
+    justify-content: flex-end;
+    align-content: center;
   }
 }
 .middle {
@@ -361,7 +366,6 @@ header .navBar .nav {
   padding-top: 30px;
   display: flex;
   justify-content: space-between;
-  text-align: center;
 }
 @media (max-width: 500px) {
   .middle .content-pick {
@@ -374,33 +378,39 @@ header .navBar .nav {
 .middle .content-pick .details {
   width: 30%;
   margin-bottom: 30px;
-  text-align: left;
   background-color: #4eccb7;
 }
-@media (max-width: 500px) {
-  .middle .content-pick .details {
-    width: 100%;
-  }
+.middle .content-pick .details h4 {
+  text-align: center;
+}
+.middle .content-pick .details p {
+  text-align: center;
 }
 .middle .content-pick .details .btn {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: flex-wrap;
+  justify-content: center;
   width: inherit;
   padding: 8px;
   color: white;
-  background-color: #216962;
-  text-align: center;
+  background-color: #642964;
   border-radius: 5px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: no-wrap;
-  justify-content: center;
 }
 .middle .content-pick .details .btn:hover {
   background-color: #2d9086;
 }
-.middle .content-pick .details .destination {
-  width: 100%;
-  margin: 20px 20px;
-  text-align: left;
+@media (max-width: 500px) {
+  .middle .content-pick .details .btn {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .middle .content-pick .details {
+    width: 100%;
+    padding: 0;
+  }
 }
 .middle .content-details {
   width: 80%;
@@ -427,8 +437,4 @@ header .navBar .nav {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
-}
-.footer .btn {
-  border: 1px solid green;
-  background-color: purple;
 }
