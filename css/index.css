@@ -86,7 +86,6 @@ video {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: inherit;
   vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -138,7 +137,7 @@ html {
 }
 a {
   text-decoration: none;
-  columns: white;
+  color: white;
 }
 h1,
 h2,
@@ -173,18 +172,24 @@ body {
   background-image: url(main/resources/theme-assets/img/bg-wool-dark.png);
   background-color: grey;
   z-index: 999;
+  padding-top: 25px;
 }
 .container header .navBar {
   margin-top: 10px;
-  margin-left: 40%;
-  width: 50%;
-  text-align: right;
+  align-items: end;
+  width: 100%;
+  text-align: left;
   justify-content: flex-end;
   color: white;
   display: flex;
   flex-direction: row;
   flex-wrap: no-wrap;
   justify-content: space-around;
+}
+.container header .navBar .nav {
+  display: inline-flex;
+  border: blue 1px solid;
+  text-align: right;
 }
 .container header .navBar .nav a {
   color: white;
@@ -207,7 +212,6 @@ body {
   width: 212px;
   height: 221px;
   float: left;
-  backface-visibility: ;
 }
 .container header .titleAndIcon h1 {
   font-size: 10rem;
@@ -230,7 +234,7 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: flex-wrap;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .container .middle .content-section .text-content {
   width: 48%;
@@ -272,15 +276,19 @@ body {
   width: 30%;
   margin-bottom: 30px;
   text-align: left;
-  background-color: darkslategrey;
+  background-color: #4eccb7;
 }
 .container .middle .content-pick .details .btn {
-  width: 80%;
+  width: inherit;
   padding: 8px;
   color: white;
   background-color: #216962;
   text-align: center;
   border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+  justify-content: center;
 }
 .container .middle .content-pick .details .btn:hover {
   background-color: #2d9086;
@@ -312,16 +320,26 @@ body {
 }
 .container .footer .btn {
   border: 1px solid green;
-  background-color: darkgreen;
+  background-color: purple;
 }
-header .navBar {
+body {
+  font-family: Minecraftia;
+}
+body .container header {
+  position: fixed;
+  width: 90%;
+  background-image: url(main/resources/theme-assets/img/bg-wool-dark.png);
+  background-color: grey;
+  z-index: 999;
+}
+body .container header .navBar {
   display: flex;
   flex-direction: row;
   flex-wrap: no-wrap;
   justify-content: space-between;
   padding-bottom: 20px;
 }
-header .navBar nav {
+body .container header .navBar nav {
   width: 50%;
   display: flex;
   flex-direction: row;
@@ -329,11 +347,11 @@ header .navBar nav {
   justify-content: space-between;
   align-items: center;
 }
-header .navBar nav a {
+body .container header .navBar nav a {
   color: black;
 }
 @media (max-width: 500px) {
-  header .navBar {
+  body .container header .navBar {
     display: flex;
     flex-direction: column;
     flex-wrap: no-wrap;
@@ -341,14 +359,14 @@ header .navBar nav a {
     align-items: center;
   }
 }
-.home header {
+body .container header .home header {
   display: flex;
   flex-direction: column;
   flex-wrap: no-wrap;
   justify-content: center;
   border-bottom: 2px dashed #C0C0C0;
 }
-.home .content-section {
+body .container header .home .content-section {
   max-width: 900px;
   margin: 30px 0;
   display: flex;
@@ -356,84 +374,84 @@ header .navBar nav a {
   justify-content: space-between;
 }
 @media (max-width: 500px) {
-  .home .content-section {
+  body .container header .home .content-section {
     display: flex;
     align-items: center;
   }
 }
-.home .content-section .text-content {
+body .container header .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
   text-align: left;
 }
 @media (max-width: 500px) {
-  .home .content-section .text-content {
+  body .container header .home .content-section .text-content {
     width: 100%;
   }
 }
-.home .content-section .img-content {
+body .container header .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
   border-radius: 10px;
 }
 @media (max-width: 500px) {
-  .home .content-section .img-content {
+  body .container header .home .content-section .img-content {
     width: 100%;
     align-content: center;
     padding: 30px;
   }
 }
-.home .inverse-content {
+body .container header .home .inverse-content {
   padding-bottom: 30px;
 }
-.home .inverse-content .text-content {
+body .container header .home .inverse-content .text-content {
   padding-left: 1%;
   padding-right: 0;
 }
-.home .inverse-content .img-content {
+body .container header .home .inverse-content .img-content {
   padding-right: 1%;
   padding-left: 0;
 }
 @media (max-width: 500px) {
-  .home .inverse-content {
+  body .container header .home .inverse-content {
     width: 100%;
     display: flex;
     flex-direction: column-reverse;
   }
-  .home .inverse-content .text-content {
+  body .container header .home .inverse-content .text-content {
     text-align: left;
   }
 }
-.home .content-destination {
+body .container header .home .content-destination {
   width: 80%;
   margin: 0 auto;
   padding: 20px 30px;
   border-top: 2px dashed #C0C0C0;
 }
-.home .content-destination img {
+body .container header .home .content-destination img {
   width: 100%;
   border-radius: 10px;
 }
 @media (max-width: 500px) {
-  .home .content-destination {
+  body .container header .home .content-destination {
     width: 100%;
     padding: 20px 10px;
   }
 }
-.home .content-pick {
+body .container header .home .content-pick {
   padding-top: 30px;
   border-top: 2px dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
   text-align: center;
 }
-.home .content-pick .details {
+body .container header .home .content-pick .details {
   width: 30%;
   margin-bottom: 30px;
   text-align: left;
   background-color: darkslategrey;
 }
-.home .content-pick .details .btn {
+body .container header .home .content-pick .details .btn {
   width: 80%;
   padding: 8px;
   color: white;
@@ -441,40 +459,40 @@ header .navBar nav a {
   text-align: center;
   border-radius: 5px;
 }
-.home .content-pick .details .btn:hover {
+body .container header .home .content-pick .details .btn:hover {
   background-color: #2d9086;
 }
 @media (max-width: 500px) {
-  .home .content-pick .details .btn {
+  body .container header .home .content-pick .details .btn {
     width: 100%;
   }
 }
 @media (max-width: 500px) {
-  .home .content-pick {
+  body .container header .home .content-pick {
     width: 80%;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-  .home .content-pick .destination {
+  body .container header .home .content-pick .destination {
     width: 100%;
     margin: 20px 20px;
     text-align: left;
   }
 }
-.footer {
+body .container header .footer {
   width: 100%;
   border-top: 2px dashed silver;
   background: #FFEBCD;
 }
-.footer p {
+body .container header .footer p {
   text-align: center;
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
 }
-.footer .btn {
+body .container header .footer .btn {
   border: 1px solid green;
   background-color: darkgreen;
 }
