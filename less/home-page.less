@@ -187,12 +187,18 @@ header {
     display: flex;
     justify-content: space-between;
     text-align: center;
+      @media @mobile{
+        .flexboxall(column, flex-wrap, center);
+      }
 
     .details {
       width: 30%;
       margin-bottom: 30px;
       text-align: left;
       background-color: rgb(78, 204, 183);
+      @media @mobile{
+        width: 100%;
+      }
 
 
       .btn {

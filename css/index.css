@@ -348,11 +348,24 @@ header .navBar .nav {
   justify-content: space-between;
   text-align: center;
 }
+@media (max-width: 500px) {
+  .middle .content-pick {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: flex-wrap;
+    justify-content: center;
+  }
+}
 .middle .content-pick .details {
   width: 30%;
   margin-bottom: 30px;
   text-align: left;
   background-color: #4eccb7;
+}
+@media (max-width: 500px) {
+  .middle .content-pick .details {
+    width: 100%;
+  }
 }
 .middle .content-pick .details .btn {
   width: inherit;
