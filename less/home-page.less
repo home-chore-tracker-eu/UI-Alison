@@ -66,30 +66,42 @@ header {
   }
 
   .navBar {
+    text-decoration: none;
+    color: white;
  
     margin-top: 10px;
     padding: 20px;
     // .flexboxall(row, flex-wrap, flex-end);
 
-    width: 100%;
-    text-align: left;
-    justify-content: flex-end;
+    width: 50%;
+    margin: 0 auto;
+    
+    justify-content: space-between;
     @media @mobile {
-      // .flexboxall(column, flex-wrap, center);
+      width: 100%;
       align-content: center;
+      margin: 0;
 
     }
 
 
     nav {
-      color: white;
+     
       width: 100%;
       display: flex;
-      .flexboxall(row, flex-wrap, right);
+      flex-direction: row;
+      line-height: 1.5;
+      justify-content: space-between;
+      // .flexboxall(column, flex-wrap, center);
 
       @media @mobile {
-        .flexboxall(column, flex-wrap, flex-end);
-        align-content: center;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0, 40%;
+        a{
+          width: 100%;
+          text-align: center;
+        }
       }
 
     }
@@ -100,7 +112,7 @@ header {
   padding-top: 250px;
   width: 100%;
   @media @mobile {
-    padding-top: 150px;
+    padding-top: 200px;
  
 }
 
@@ -230,11 +242,7 @@ header {
 
       }
 
-      // .destination {
-      //   width: 100%;
-      //   margin: 20px 20px;
-      //   text-align: left;
-      // }
+    
       @media @mobile {
         width: 100%;
         padding: 0;

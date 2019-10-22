@@ -140,6 +140,7 @@ body {
 }
 a {
   text-decoration: none;
+  color: white;
 }
 h1,
 h2,
@@ -242,32 +243,37 @@ header .titleAndIcon .mineChore-img img {
   }
 }
 header .navBar {
+  text-decoration: none;
+  color: white;
   margin-top: 10px;
   padding: 20px;
-  width: 100%;
-  text-align: left;
-  justify-content: flex-end;
+  width: 50%;
+  margin: 0 auto;
+  justify-content: space-between;
 }
 @media (max-width: 500px) {
   header .navBar {
+    width: 100%;
     align-content: center;
+    margin: 0;
   }
 }
 header .navBar nav {
-  color: white;
   width: 100%;
   display: flex;
   flex-direction: row;
-  flex-wrap: flex-wrap;
-  justify-content: right;
+  line-height: 1.5;
+  justify-content: space-between;
 }
 @media (max-width: 500px) {
   header .navBar nav {
-    display: flex;
     flex-direction: column;
-    flex-wrap: flex-wrap;
-    justify-content: flex-end;
-    align-content: center;
+    justify-content: center;
+    padding: 0, 40%;
+  }
+  header .navBar nav a {
+    width: 100%;
+    text-align: center;
   }
 }
 .middle {
@@ -276,7 +282,7 @@ header .navBar nav {
 }
 @media (max-width: 500px) {
   .middle {
-    padding-top: 150px;
+    padding-top: 200px;
   }
 }
 .middle .main-img {
