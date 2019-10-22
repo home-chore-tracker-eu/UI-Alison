@@ -382,9 +382,12 @@ header .navBar nav {
   }
 }
 .middle .content-pick .details {
+  display: flex;
+  flex-direction: column;
   width: 30%;
-  margin-bottom: 30px;
+  margin: 0 auto;
   background-color: #4eccb7;
+  justify-content: space-between;
 }
 .middle .content-pick .details h4 {
   text-align: center;
@@ -399,6 +402,7 @@ header .navBar nav {
   flex-wrap: flex-wrap;
   justify-content: center;
   width: inherit;
+  margin: 0 auto;
   padding: 8px;
   color: white;
   background-color: #642964;

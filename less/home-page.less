@@ -211,21 +211,27 @@ header {
       }
 
     .details {
+      display: flex;
+      flex-direction: column;
       width: 30%;
-      margin-bottom: 30px;
+      margin: 0 auto;
       background-color: rgb(78, 204, 183);
+      justify-content: space-between;
+
       h4{
         text-align: center;
         // display: flex;
-        // justify-content: center;
+        
       }
       p {
         text-align: center;
       }
+
       .btn {
         text-align: center;
         .flexboxall(column, flex-wrap, center);
         width: inherit;
+        margin: 0 auto;
         padding: 8px;
         color: white;
         background-color: rgb(100, 41, 100);
@@ -254,7 +260,7 @@ header {
     width: 80%;
     margin: 0 auto;
     padding: 20px 30px;
-    // border-top: 2px dashed @navigation-border;
+    
     @media @mobile {
       width: 100%;
       padding: 0;
