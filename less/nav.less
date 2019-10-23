@@ -1,0 +1,41 @@
+header {
+    position: fixed;
+    width: 80%;
+    background-color: grey;
+    // z-index: 999;
+    .flexboxall(row-reverse, no-wrap, space-between);
+    padding-bottom: 20px;
+    background-image: url(main/resources/theme-assets/img/bg-wool-dark.png);
+    
+            .nav {
+                width: 100%;
+                color: white;
+                .flexboxall(row-reverse, flex-wrap, space-between);
+                align-items: center;
+    
+            
+                a {
+                    color: white;
+                }
+            }
+        
+
+        @media @mobile {
+            .flexboxall(column, no-wrap, center);
+            align-items: center;
+        }
+
+        .titleAndIcon{
+            .flexboxall(row-reverse, flex-wrap, space-between);
+                align-items: center;
+
+        }
+    }
+
+    .home {
+        header {
+            // display: flex;
+            .flexboxall(column, no-wrap, center);
+            border-bottom: 2px dashed @navigation-border;
+        }
+    }
