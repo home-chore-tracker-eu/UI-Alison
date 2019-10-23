@@ -190,11 +190,12 @@ header {
   padding-top: 25px;
 }
 header .titleAndIcon {
+  width: 50%;
   display: flex;
   flex-direction: row-reverse;
   flex-wrap: flex-wrap;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
 }
 @media (max-width: 500px) {
   header .titleAndIcon {
@@ -207,38 +208,37 @@ header .titleAndIcon {
 header .titleAndIcon .cube-img {
   border: none;
   background-color: transparent;
-  width: 215px;
+  width: 135px;
   overflow: hidden;
 }
 @media (max-width: 500px) {
   header .titleAndIcon .cube-img {
-    display: flex;
-    justify-content: center;
+    display: none;
   }
 }
 header .titleAndIcon .cube-img img {
   border: 0;
-  width: 212px;
-  height: 221px;
+  width: 135px;
+  height: 140px;
   float: left;
 }
 @media (max-width: 500px) {
   header .titleAndIcon .cube-img img {
-    width: 48px;
-    height: 50px;
+    width: 30px;
+    height: 31px;
     align-self: center;
   }
 }
 header .titleAndIcon .mineChore-img img {
   border: 0;
-  height: 250px;
-  width: 1000px;
+  height: 150px;
+  width: 600px;
   float: right;
 }
 @media (max-width: 500px) {
   header .titleAndIcon .mineChore-img img {
     height: 50px;
-    width: 200px;
+    width: 170px;
     align-self: center;
   }
 }
@@ -277,12 +277,12 @@ header .navBar nav {
   }
 }
 .middle {
-  padding-top: 250px;
+  padding-top: 230px;
   width: 100%;
 }
 @media (max-width: 500px) {
   .middle {
-    padding-top: 200px;
+    padding-top: 158px;
   }
 }
 .middle .main-img {
@@ -309,8 +309,7 @@ header .navBar nav {
   }
 }
 .middle .content-section .text-content {
-  width: 48%;
-  padding-right: 1%;
+  width: 50%;
   text-align: left;
 }
 @media (max-width: 500px) {
@@ -320,8 +319,7 @@ header .navBar nav {
 }
 .middle .content-section .img-content {
   width: 50%;
-  padding-left: 1%;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 @media (max-width: 500px) {
   .middle .content-section .img-content {
@@ -329,7 +327,7 @@ header .navBar nav {
   }
 }
 .middle .content-section img {
-  border-radius: 15px;
+  border-radius: 10px;
   width: 100%;
 }
 .middle .inverse-content {
@@ -357,7 +355,6 @@ header .navBar nav {
 }
 .middle .inverse-content .img-content {
   width: 50%;
-  padding-right: 1%;
   padding-left: 0;
 }
 @media (max-width: 500px) {
@@ -423,9 +420,14 @@ header .navBar nav {
   }
 }
 .middle .content-details {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
-  padding: 20px 30px;
+  padding: 20px 0x;
+}
+.middle .content-details h2,
+.middle .content-details p,
+.middle .content-details h4 {
+  text-align: center;
 }
 @media (max-width: 500px) {
   .middle .content-details {
@@ -447,4 +449,7 @@ header .navBar nav {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+.text-content-about a {
+  text-color: black;
 }

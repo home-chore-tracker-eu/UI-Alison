@@ -10,9 +10,10 @@ header {
 
 
   .titleAndIcon {
+    width: 50%;
 
-    .flexboxall(row-reverse, flex-wrap, space-around);
-    align-items: center;
+    .flexboxall(row-reverse, flex-wrap, center);
+    margin: 0 auto;
 
     @media @mobile {
       .flexboxall(column-reverse, flex-wrap, space-around);
@@ -21,25 +22,21 @@ header {
     .cube-img {
       border: none;
       background-color: transparent;
-      width: 215px;
+      width: 135px;
       overflow: hidden;
       @media @mobile{
-        display:flex;
-          justify-content: center;
+        display:none;
       }
-
-
-
       img {
         border: 0;
-        width: 212px;
-        height: 221px;
+        width: 135px;
+        height: 140px;
         float: left;
         
         
         @media @mobile {
-          width: 48px;
-          height: 50px;
+          width: 30px;
+          height: 31px;
           align-self: center;
           
       }
@@ -49,12 +46,12 @@ header {
       .mineChore-img {
         img {
           border: 0;
-          height: 250px;
-          width: 1000px;
+          height: 150px;
+          width: 600px;
           float: right;
           @media @mobile {
             height: 50px;
-            width: 200px;
+            width: 170px;
             align-self: center;
          
         }
@@ -109,10 +106,10 @@ header {
 }
 
 .middle {
-  padding-top: 250px;
+  padding-top: 230px;
   width: 100%;
   @media @mobile {
-    padding-top: 200px;
+    padding-top: 158px;
  
 }
 
@@ -136,8 +133,8 @@ header {
 
 
     .text-content {
-      width: 48%;
-      padding-right: 1%;
+      width: 50%;
+      // padding-right: 1%;
       text-align: left;
 
       @media @mobile {
@@ -147,8 +144,8 @@ header {
 
     .img-content {
       width: 50%;
-      padding-left: 1%;
-      border-radius: 10px;
+      // padding-left: 1%;
+      border-radius: 20px;
       @media @mobile {
         width: 100%;
       }
@@ -156,7 +153,7 @@ header {
 
 
       img {
-        border-radius: 15px;
+        border-radius: 10px;
         width: 100%;
 
         
@@ -187,7 +184,6 @@ header {
 
     .img-content {
       width: 50%;
-      padding-right: 1%;
       padding-left: 0;
       @media @mobile {
         width: 100%;
@@ -199,6 +195,7 @@ header {
 
     }
   }
+
 
   .content-pick {
     padding-top: 30px;
@@ -257,9 +254,13 @@ header {
   }
 
   .content-details {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
-    padding: 20px 30px;
+    padding: 20px 0x;
+      h2, p, h4{
+        text-align: center;
+      }
+     
     
     @media @mobile {
       width: 100%;
