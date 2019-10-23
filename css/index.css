@@ -367,6 +367,7 @@ header .navBar nav {
 }
 .middle .content-pick {
   padding-top: 30px;
+  padding-bottom: 30px;
   display: flex;
   justify-content: space-between;
 }
@@ -383,12 +384,12 @@ header .navBar nav {
   flex-direction: column;
   width: 30%;
   margin: 0 auto;
+  padding: 25px 0;
+  border-radius: 15px;
   background-color: #4eccb7;
   justify-content: space-between;
 }
-.middle .content-pick .details h4 {
-  text-align: center;
-}
+.middle .content-pick .details h4,
 .middle .content-pick .details p {
   text-align: center;
 }
@@ -416,7 +417,9 @@ header .navBar nav {
 @media (max-width: 500px) {
   .middle .content-pick .details {
     width: 100%;
-    padding: 0;
+    padding: 10px 0;
+    margin: 5px auto;
+    border-radius: 15px;
   }
 }
 .middle .content-details {
@@ -442,7 +445,7 @@ header .navBar nav {
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
-  background: #FFEBCD;
+  background: grey;
 }
 .footer p {
   text-align: center;

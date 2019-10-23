@@ -199,6 +199,8 @@ header {
 
   .content-pick {
     padding-top: 30px;
+    padding-bottom: 30px;
+    
     // border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
@@ -212,16 +214,14 @@ header {
       flex-direction: column;
       width: 30%;
       margin: 0 auto;
+      padding: 25px 0;
+      border-radius: 15px;
       background-color: rgb(78, 204, 183);
       justify-content: space-between;
 
-      h4{
+      h4, p{
         text-align: center;
-        // display: flex;
         
-      }
-      p {
-        text-align: center;
       }
 
       .btn {
@@ -248,7 +248,9 @@ header {
     
       @media @mobile {
         width: 100%;
-        padding: 0;
+        padding: 10px 0;
+        margin: 5px auto;
+        border-radius: 15px;
       }
     }
   }
@@ -285,7 +287,7 @@ header {
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
-  background: @sandy-beach;
+  background: grey;
 
   p {
     text-align: center;
