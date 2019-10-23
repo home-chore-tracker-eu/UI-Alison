@@ -453,10 +453,32 @@ header .navBar nav a {
   width: 100%;
   border-radius: 10px;
 }
+.testimonials {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: flex-wrap;
+  justify-content: center;
+  width: 100%;
+  background-color: #216962;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+.testimonials .left-button {
+  margin: 0 40px;
+  border-color: 1px solid black;
+}
+.testimonials .right-button {
+  margin: 0 40px;
+  border-radius: 50%;
+  border-color: 1px solid black;
+}
 .footer {
   width: 100%;
-  border-top: 2px dashed silver;
   background: grey;
+  margin-bottom: 10px;
+}
+.footer .githubcatLink {
+  padding: 30px;
 }
 .footer p {
   text-align: center;
@@ -464,6 +486,284 @@ header .navBar nav a {
   font-size: 1.6rem;
   padding: 20px;
 }
-.text-content-about a {
-  text-color: black;
+header {
+  position: fixed;
+  width: 90%;
+  background-image: url(main/resources/theme-assets/img/bg-wool-dark.png);
+  background-color: grey;
+  z-index: 999;
+  padding-top: 25px;
+}
+header .titleAndIcon {
+  width: 50%;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: flex-wrap;
+  justify-content: center;
+  margin: 0 auto;
+}
+@media (max-width: 500px) {
+  header .titleAndIcon {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: flex-wrap;
+    justify-content: space-around;
+  }
+}
+header .titleAndIcon .cube-img {
+  border: none;
+  background-color: transparent;
+  width: 135px;
+  overflow: hidden;
+}
+@media (max-width: 500px) {
+  header .titleAndIcon .cube-img {
+    display: none;
+  }
+}
+header .titleAndIcon .cube-img img {
+  border: 0;
+  width: 135px;
+  height: 140px;
+  float: left;
+}
+@media (max-width: 500px) {
+  header .titleAndIcon .cube-img img {
+    width: 30px;
+    height: 31px;
+    align-self: center;
+  }
+}
+header .titleAndIcon .mineChore-img img {
+  border: 0;
+  height: 150px;
+  width: 600px;
+  float: right;
+}
+@media (max-width: 500px) {
+  header .titleAndIcon .mineChore-img img {
+    height: 50px;
+    width: 170px;
+    align-self: center;
+  }
+}
+header .navBar {
+  text-decoration: none;
+  color: white;
+  margin-top: 10px;
+  padding: 20px;
+  width: 50%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+@media (max-width: 500px) {
+  header .navBar {
+    width: 100%;
+    align-content: center;
+    margin: 0;
+  }
+}
+header .navBar nav {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  line-height: 1.5;
+  justify-content: space-between;
+}
+header .navBar nav a {
+  width: 100%;
+  text-align: center;
+  font-size: 25px;
+  text-shadow: royalblue;
+}
+@media (max-width: 500px) {
+  header .navBar nav {
+    flex-direction: column;
+    justify-content: center;
+    padding: 0, 40%;
+  }
+  header .navBar nav a {
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    text-shadow: royalblue;
+  }
+}
+.middle {
+  padding-top: 230px;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .middle {
+    padding-top: 170px;
+  }
+}
+.middle .main-img {
+  padding-top: 200;
+  width: 100%;
+}
+.middle .main-img img {
+  width: 100%;
+}
+.middle .content-section {
+  max-width: 100%;
+  margin: 20px 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: flex-wrap;
+  justify-content: space-around;
+}
+@media (max-width: 500px) {
+  .middle .content-section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: flex-wrap;
+    justify-content: space-around;
+  }
+}
+.middle .content-section .text-content {
+  width: 50%;
+  text-align: left;
+}
+@media (max-width: 500px) {
+  .middle .content-section .text-content {
+    width: 100%;
+  }
+}
+.middle .content-section .img-content {
+  width: 50%;
+  border-radius: 20px;
+}
+@media (max-width: 500px) {
+  .middle .content-section .img-content {
+    width: 100%;
+  }
+}
+.middle .content-section img {
+  border-radius: 10px;
+  width: 100%;
+}
+.middle .inverse-content {
+  padding-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .middle .inverse-content {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: flex-wrap;
+    justify-content: center;
+    scroll-padding-bottom: 0;
+  }
+}
+.middle .inverse-content .text-content {
+  padding-left: 1%;
+  padding-right: 0;
+  text-align: left;
+  width: 50%;
+}
+@media (max-width: 500px) {
+  .middle .inverse-content .text-content {
+    width: 100%;
+  }
+}
+.middle .inverse-content .img-content {
+  width: 50%;
+  padding-left: 0;
+}
+@media (max-width: 500px) {
+  .middle .inverse-content .img-content {
+    width: 100%;
+  }
+}
+.middle .inverse-content .img-content img {
+  width: 100%;
+}
+.middle .content-pick {
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .middle .content-pick {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: flex-wrap;
+    justify-content: center;
+  }
+}
+.middle .content-pick .details {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin: 0 auto;
+  padding: 25px 0;
+  border-radius: 15px;
+  background-color: #4eccb7;
+  justify-content: space-between;
+}
+.middle .content-pick .details h4,
+.middle .content-pick .details p {
+  text-align: center;
+}
+.middle .content-pick .details .btn {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: flex-wrap;
+  justify-content: center;
+  width: inherit;
+  margin: 0 auto;
+  padding: 8px;
+  color: white;
+  font-size: 1.5rem;
+  background-color: #642964;
+  border-radius: 5px;
+}
+.middle .content-pick .details .btn:hover {
+  background-color: #2d9086;
+}
+@media (max-width: 500px) {
+  .middle .content-pick .details .btn {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .middle .content-pick .details {
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px auto;
+    border-radius: 15px;
+  }
+}
+.middle .content-details {
+  width: 100%;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+.middle .content-details h2,
+.middle .content-details p,
+.middle .content-details h4 {
+  text-align: center;
+  padding-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .middle .content-details {
+    width: 100%;
+    padding: 10px 0;
+  }
+}
+.middle .content-details img {
+  width: 100%;
+  border-radius: 10px;
+}
+.footer {
+  width: 100%;
+  background: grey;
+  margin-bottom: 10px;
+}
+.footer p {
+  text-align: center;
+  color: #212529;
+  font-size: 1.6rem;
+  padding: 20px;
 }
