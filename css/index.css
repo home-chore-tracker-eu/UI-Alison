@@ -251,24 +251,28 @@ header .navBar {
   color: white;
   margin-top: 10px;
   padding: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: flex-wrap;
+  justify-content: center;
   width: 50%;
   margin: 0 auto;
-  justify-content: space-between;
   /* stroke */
 }
 @media (max-width: 500px) {
   header .navBar {
     width: 100%;
     align-content: center;
-    margin: 0;
+    margin: 0 auto;
   }
 }
 header .navBar nav {
-  width: 100%;
+  width: 50%;
   display: flex;
   flex-direction: row;
-  line-height: 1.5;
-  justify-content: space-between;
+  flex-wrap: flex-wrap;
+  justify-content: flex-end;
+  margin: 0 auto;
 }
 @media (max-width: 500px) {
   header .navBar nav {
@@ -283,6 +287,7 @@ header .navBar nav {
   }
 }
 header .navBar nav ul {
+  margin: 0 auto;
   list-style: none;
   text-align: center;
 }
@@ -321,10 +326,10 @@ header .navBar nav ul li a {
 header .navBar nav ul li a,
 header .navBar nav ul li a:after,
 header .navBar nav ul li a:before {
-  transition: all 0.02s;
+  transition: all 0.5s;
 }
 header .navBar nav ul li a:hover {
-  color: blue;
+  color: white;
 }
 header .navBar nav.stroke ul li a,
 header .navBar nav.fill ul li a {
