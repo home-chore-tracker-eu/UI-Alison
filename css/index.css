@@ -190,6 +190,8 @@ header {
   background-color: grey;
   z-index: 999;
   padding-top: 25px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 header .titleAndIcon {
   width: 50%;
@@ -267,6 +269,9 @@ header .navBar nav {
   line-height: 1.5;
   justify-content: space-between;
 }
+header .navBar nav :hover {
+  background-color: #533bbd;
+}
 header .navBar nav a {
   width: 100%;
   text-align: center;
@@ -278,6 +283,9 @@ header .navBar nav a {
     flex-direction: column;
     justify-content: center;
     padding: 0, 40%;
+  }
+  header .navBar nav :hover {
+    background-color: #533bbd;
   }
   header .navBar nav a {
     width: 100%;
@@ -301,6 +309,8 @@ header .navBar nav a {
 }
 .middle .main-img img {
   width: 100%;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 .middle .content-section {
   max-width: 100%;
