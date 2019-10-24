@@ -389,7 +389,7 @@ header .navBar nav.fill ul li a:hover:after {
 }
 .middle .content-section {
   max-width: 100%;
-  margin: 20px 0;
+  margin: 10px 0;
   display: flex;
   flex-direction: row;
   flex-wrap: flex-wrap;
@@ -478,7 +478,7 @@ header .navBar nav.fill ul li a:hover:after {
   flex-direction: column;
   width: 30%;
   margin: 0 auto;
-  padding: 25px 0;
+  padding: 5px 0;
   border-radius: 15px;
   background-color: #4eccb7;
   justify-content: space-between;
@@ -829,6 +829,13 @@ header .navBar nav a {
 .middle .content-details h4 {
   text-align: center;
   padding-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .middle .content-details h2,
+  .middle .content-details p,
+  .middle .content-details h4 {
+    padding: 0;
+  }
 }
 @media (max-width: 500px) {
   .middle .content-details {
