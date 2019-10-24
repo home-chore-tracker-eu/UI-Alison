@@ -186,8 +186,6 @@ p {
 header {
   position: fixed;
   width: 90%;
-  background-image: url(main/resources/theme-assets/img/bg-wool-dark.png);
-  background-color: grey;
   z-index: 999;
   padding-top: 25px;
   border-top-left-radius: 15px;
@@ -561,7 +559,6 @@ header .navBar nav.fill ul li a:hover:after {
 }
 .footer {
   width: 100%;
-  background-image: url(main/resources/theme-assets/img/bg-wool-dark.png);
   margin-bottom: 10px;
 }
 .footer .githubcatLink {
