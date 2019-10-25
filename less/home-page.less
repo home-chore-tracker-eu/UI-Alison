@@ -1,8 +1,6 @@
 header {
   position: fixed;
   width: 90%;
-  background-image: url(main/resources/theme-assets/img/bg-wool-dark.png);
-  background-color: grey;
   z-index: 999;
   padding-top: 25px;
   border-top-left-radius: 15px;
@@ -76,7 +74,7 @@ header {
 
     width: 50%;
     margin: 0 auto;
-    
+
 
     // justify-content: space-around;
 
@@ -85,8 +83,9 @@ header {
       align-content: center;
       margin: 0 auto;
     }
+
     nav {
-      
+
       width: 50%;
       .flexboxall(row, flex-wrap, flex-end);
       // display: flex;
@@ -94,6 +93,7 @@ header {
       // line-height: 1.5;
       // justify-content: space-between;
       margin: 0 auto;
+
       // padding: 50px 0;
       @media @mobile {
 
@@ -109,29 +109,34 @@ header {
         }
       }
     }
+
     nav ul {
-      
+
       margin: 0 auto;
       list-style: none;
       text-align: center;
-      @media @mobile{
-        display:flex;
+
+      @media @mobile {
+        display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: end;
-        
+
       }
     }
+
     nav ul li {
       display: inline-block;
-      @media @mobile{
+
+      @media @mobile {
         // font-size: 10px;
         padding: 0;
         margin: 0;
-        
+
       }
 
     }
+
     nav ul li a {
       display: block;
       padding: 15px;
@@ -140,26 +145,30 @@ header {
       font-weight: 800;
       text-transform: uppercase;
       margin: 0 10px;
-      @media @mobile{
+
+      @media @mobile {
         font-size: 13px;
         padding: 0;
-       
+
       }
     }
+
     nav ul li a,
     nav ul li a:after,
     nav ul li a:before {
       transition: all .5s;
     }
+
     nav ul li a:hover {
-      color:white;
+      color: white;
     }
-    
+
     /* stroke */
     nav.stroke ul li a,
     nav.fill ul li a {
       position: relative;
     }
+
     nav.stroke ul li a:after,
     nav.fill ul li a:after {
       position: absolute;
@@ -173,24 +182,27 @@ header {
       background: #aaa;
       height: 1px;
     }
+
     nav.stroke ul li a:hover:after {
       width: 100%;
     }
-    
+
     nav.fill ul li a {
       transition: all 2s;
     }
-    
+
     nav.fill ul li a:after {
       text-align: left;
       content: '.';
       margin: 0;
       opacity: 0;
     }
+
     nav.fill ul li a:hover {
       color: #fff;
       z-index: 1;
     }
+
     nav.fill ul li a:hover:after {
       z-index: -10;
       animation: fill 1s forwards;
@@ -198,7 +210,7 @@ header {
       -moz-animation: fill 1s forwards;
       opacity: 1;
     }
-    
+
 
 
   }
@@ -228,7 +240,7 @@ header {
 
   .content-section {
     max-width: 100%;
-    margin: 20px 0;
+    margin: 10px 0;
     .flexboxall(row, flex-wrap, space-around);
 
     @media @mobile {
@@ -421,8 +433,6 @@ header {
 
 .footer {
   width: 100%;
-  // border-top: 2px dashed silver;
-  background: grey;
   margin-bottom: 10px;
 
   .githubcatLink {
