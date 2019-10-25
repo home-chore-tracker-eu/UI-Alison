@@ -5,6 +5,8 @@ To create a chore tracker app called MINECHORE with
 UI goal
 Create a responsive landing and about page in the style of MINECRAFT.
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ee7285fe-7e5c-4aea-aa05-451654f21e56/deploy-status)](https://app.netlify.com/sites/minechore-choretracker/deploys)
+
 Who worked on the team.
 TL Patrick Rodriques
 UI Ali Law and Babatunde Ade
